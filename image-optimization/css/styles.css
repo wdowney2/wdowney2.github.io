@@ -36,7 +36,7 @@ nav a {
 
 .hero {
   overflow: hidden;
-  background-image: url("/Originals/image-11.jpg");
+  background-image: url("../Originals/image-11.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
