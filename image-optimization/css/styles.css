@@ -36,13 +36,29 @@ nav a {
 
 .hero {
   overflow: hidden;
-}
-
-.hero img {
+  background-image: url("/Originals/image-11.jpg");
+  background-position: center;
+  background-size: cover;
   width: 100%;
   height: 420px;
-  object-fit: cover;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.hero .intro {
+  background-color: #000c;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+
+}
+
+.hero p {
+  margin-top: 0;
+  max-width: 80ch;
 }
 
 .intro {
@@ -70,7 +86,7 @@ nav a {
   background: #FBF3EA;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .product-card img {
@@ -94,6 +110,10 @@ footer {
   color: #F6E9DA;
   text-align: center;
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .order-btn {
@@ -108,21 +128,29 @@ footer {
   font-family: 'Source Sans Pro', Arial, sans-serif;
   font-weight: 600;
   cursor: pointer;
+  width: fit-content;
 }
 
 .btn-arrow {
   flex-shrink: 0;
+  max-height: 1em;
+  max-width: 100%;
 }
 
 /* ---- print styles, bundled in with everything else ---- */
 @media print {
-  header, nav, footer {
+
+  header,
+  nav,
+  footer {
     display: none;
   }
+
   body {
     color: #000;
     background: #fff;
   }
+
   .products {
     grid-template-columns: 1fr;
   }
