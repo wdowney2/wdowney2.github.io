@@ -1,3 +1,4 @@
 # wdowney2.github.io
 
-- [image-optimization](https://wdowney2.github.io/image-optimization/)
+- [image-optimization (unoptimized)](https://wdowney2.github.io/image-optimization/unoptimized)
+- [image-optimization (optimized)](https://wdowney2.github.io/image-optimization/optimized)
