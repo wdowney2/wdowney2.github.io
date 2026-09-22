@@ -1,0 +1,129 @@
+/* Maple & Rye Bakehouse -- main stylesheet */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: #3A2A1D;
+  background: #FFFDFB;
+  line-height: 1.5;
+}
+
+header {
+  background: #4A2E1B;
+  color: #F6E9DA;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+nav a {
+  color: #F6E9DA;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+}
+
+.hero {
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+.intro {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.product-card {
+  background: #FBF3EA;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card .caption {
+  padding: 1rem;
+}
+
+.product-card h3 {
+  margin: 0 0 0.25rem;
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+footer {
+  background: #4A2E1B;
+  color: #F6E9DA;
+  text-align: center;
+  padding: 2rem;
+}
+
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #B5652E;
+  color: #FFFDFB;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-arrow {
+  flex-shrink: 0;
+}
+
+/* ---- print styles, bundled in with everything else ---- */
+@media print {
+  header, nav, footer {
+    display: none;
+  }
+  body {
+    color: #000;
+    background: #fff;
+  }
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
