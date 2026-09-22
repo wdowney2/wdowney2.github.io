@@ -11,7 +11,20 @@
   <!-- I don't know where you got Source Sans Pro from, but it's not in Google Fonts anymore. I think the browser is just falling back to Arial. Replacing with Source Sans 3 for my optimization -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400..600&display=swap" rel="stylesheet">
+  <!--link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400..600&display=swap" rel="stylesheet"-->
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400..600&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400..600&display=swap"
+          rel="stylesheet"
+          type="text/css"
+      />
+  </noscript>
 
   <link rel="preload" href="img/hero-small.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="css/styles.css">
